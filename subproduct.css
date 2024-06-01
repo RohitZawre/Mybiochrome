@@ -946,3 +946,148 @@ nav ul li:hover .sub-menu-1 .options-2:hover {
 }
 
 
+.sidebar {
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  background: #babec5;
+}
+
+
+/************** accordians sidebar ****************/
+
+
+
+
+
+
+/* styles.css */
+
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+#sidebar {
+  background-color: #ddd;
+  width: 320px;
+  padding: 10px;
+  overflow-y: auto;
+  box-shadow: 0.5px 0.5px 15px rgb(167, 166, 166);
+  border-radius: 5px;
+}
+
+#sidebar::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.accordion-header {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.accordion-header:hover {
+  background-color: #666464;
+  color: #fff;
+  border-radius: 3px;
+}
+
+.accordion-header.active {
+  background-color: #242424;
+  color: #fff;
+  font-size: 1.05rem;
+}
+
+.accordion-content {
+  padding-left: 15px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}
+
+.accordion-content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.accordion-item {
+  padding: 8px 0;
+}
+
+.accordion-item a {
+  color: #333;
+  display: block;
+  text-decoration: none;
+  transition: color 0.5s ease, text-decoration 0.5s ease;
+}
+
+.accordion-item a:hover {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+#product-section {
+  flex: 1; /* Take up remaining space */
+  background-color: #fff; /* Example background color for product section */
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card img {
+  max-width: 100px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.product-card:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.pagination a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.pagination a:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.pagination a.prev,
+.pagination a.next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
