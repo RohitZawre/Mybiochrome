@@ -1014,6 +1014,7 @@ nav ul li:hover .sub-menu-1 .options-2:hover {
   color: inherit;
 }
 
+
 .accordion-item {
   padding: 8px 0;
 }
@@ -1030,6 +1031,15 @@ nav ul li:hover .sub-menu-1 .options-2:hover {
   text-decoration: underline;
   font-weight: 600;
   font-size: 1.05rem;
+}
+
+
+.accordion-item a.active {
+  color: #555;
+  text-decoration: underline;
+  font-weight: 600;
+  font-size: 1.05rem;
+  background: none;
 }
 
 #product-section {
